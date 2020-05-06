@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BooksActivity">
+    
+    <LinearLayout
+        android:id="@+id/books_linear_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/books_image_view"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/thumbnail"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/books_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/books_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+
+                <Button
+                    android:id="@+id/books_download_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_disable_button_bg"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:layout_marginTop="16dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    />
+
+                <Button
+                    android:id="@+id/books_view_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_disable_button_bg"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</ScrollView>

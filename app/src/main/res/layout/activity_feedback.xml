@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:orientation="vertical"
+    tools:context=".activity.Feedback">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/feedback_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/feedback_message"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/skyblue"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/feedback_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/feedback_name_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/username"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/skyblue"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/feedback_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/feedback_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/feedback_name_bg"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/email"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/skyblue"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/feedback_description"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/feedback_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/feedback_name_bg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="text|textMultiLine"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textColorHint="@color/skyblue"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/feedback_btn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/feedback_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_feedback_btn"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

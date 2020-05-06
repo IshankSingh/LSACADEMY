@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">LS ACADEMY</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="subject_matters">Video Lectures</string>
+    <string name="question_papers">Question Papers</string>
+    <string name="subject_notes">Subject Notes</string>
+    <string name="refresh">Refresh</string>
+    <string name="technical_ebooks">Technical EBooks</string>
+    <string name="general_books">General Books</string>
+    <string name="notes">Notes</string>
+    <string name="logo">logo</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="create_account">Create an account</string>
+    <string name="sign_up_text">Already have an account ? Sign In</string>
+    <string name="sign_in_text">Don\'t have account ? Create Account</string>
+    <string name="sign_in">sign in</string>
+    <string name="download">Download</string>
+    <string name="add_a_comment">Add a comment</string>
+    <string name="comment">Comment</string>
+    <string name="share">share</string>
+    <string name="send_to">Share with</string>
+    <string name="showComment">Show Comment</string>
+    <string name="zero_comment_msg">Be the first here to comment</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_internet_msg">Your network is unavailable. Check your data or wifi connection.</string>
+    <string name="login">Login</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_ls_academy">About LS ACADEMY</string>
+    <string name="about_instructors">About Instructors</string>
+    <string name="about_developers">About Developers</string>
+    <string name="communication">Communication</string>
+    <string name="description">description</string>
+    <string name="submit">submit</string>
+    <string name="tell_us">Tell Us</string>
+    <string name="complaint">Complaint</string>
+    <string name="report_problem">Report Problem</string>
+    <string name="know_us">Know Us</string>
+    <string name="no_downloads">No Downloads</string>
+    <string name="lab_manual_logo">Lab Manual Logo</string>
+    <string name="lab_manual">Lab Manual</string>
+    <string name="lab_solution_manual">Lab/Solution Manual</string>
+    <string name="view">View</string>
+    <string name="about_ls_desc">LS Academy for technical education is a platform,
+        where students and faculty members shares their lecture notes, YouTube Videos which
+        student from any college/university can access 24*7 for free of cost. Our vision is to make
+        classroom more interactive to increase effectiveness and conceptual clarity among students. We
+        are presently providing material for Computer Science courses Mainly, We are planning to include
+        other engineering courses in future. Our Notes mainly covers syllabus of Sharda University, Abdul Kalam Technical University,
+        Galgotia University, Amity University and Noida International University.</string>
+</resources>

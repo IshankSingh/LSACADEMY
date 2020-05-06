@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <size android:width="40dp"
+                android:height="40dp"/>
+            <stroke android:width="0.5dp"
+                android:color="@color/black"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/file_download"
+        android:gravity="center">
+    </item>
+</layer-list>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/white"
+    tools:context=".account.CreateAccount">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/sign_up_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/sign_up_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="18sp"
+        android:hint="@string/username"
+        android:drawablePadding="16dp"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:drawableStart="@drawable/icon_username"/>
+
+    <EditText
+        android:id="@+id/sign_up_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="18sp"
+        android:hint="@string/email"
+        android:drawablePadding="16dp"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/icon_email"/>
+
+    <EditText
+        android:id="@+id/sign_up_pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="18sp"
+        android:hint="@string/password"
+        android:drawablePadding="16dp"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/icon_password"/>
+
+    <EditText
+        android:id="@+id/sign_up_conf_pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="18sp"
+        android:hint="@string/confirm_password"
+        android:drawablePadding="16dp"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/icon_password"/>
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_account"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/sign_up_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/sign_up_text"/>
+
+</LinearLayout>
+
+</ScrollView>

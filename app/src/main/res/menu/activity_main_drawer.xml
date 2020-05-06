@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="@string/tell_us">
+            <menu>
+
+                <item
+                    android:id="@+id/feedback"
+                    android:title="@string/feedback"
+                    android:checkable="true"
+                    android:icon="@drawable/feedback_icon"/>
+
+                <item
+                    android:id="@+id/download"
+                    android:checkable="true"
+                    android:title="@string/download"
+                    android:icon="@drawable/file_download"/>
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/know_us">
+            <menu>
+                <item
+                    android:id="@+id/about_app"
+                    android:checkable="true"
+                    android:title="@string/about_ls_academy"
+                    android:icon="@drawable/about_ls_academy_icon"/>
+
+                <item
+                    android:id="@+id/about_instructor"
+                    android:checkable="true"
+                    android:title="@string/about_instructors"
+                    android:icon="@drawable/teacher"/>
+
+                <item
+                    android:id="@+id/about_developer"
+                    android:checkable="true"
+                    android:title="@string/about_developers"
+                    android:icon="@drawable/pereson"/>
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/communication">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="@string/share"
+                android:checkable="true"
+                android:icon="@drawable/share"/>
+        </menu>
+    </item>
+</menu>
